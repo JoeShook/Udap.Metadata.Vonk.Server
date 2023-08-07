@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IncludeSymbols>True</IncludeSymbols>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hl7.Fhir.Specification.R4B" Version="4.3.0" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="Udap.Metadata.Server" Version="0.2.3" />
+
+
+    <PackageReference Include="Vonk.Core" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+    <PackageReference Include="IdentityModel" Version="6.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.10.0" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.10.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <!-- <Target Name="CopySupportDLLs" AfterTargets="Build"> -->
+  <!--   <Message Text="Executing CopySupportDLLs task" Importance="High" /> -->
+
+    <!-- <Copy -->
+    <!--   SourceFiles="..\_tests\UdapMetadata.Tests\bin\$(Configuration)\net7.0\System.IdentityModel.Tokens.Jwt.dll" -->
+    <!--   DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\BouncyCastle.Crypto.dll" DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\Hl7.Fhir.ElementModel.dll" DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\Hl7.Fhir.R4B.Core.dll" DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\Hl7.Fhir.R4B.Specification.dll" DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\Hl7.Fhir.Support.dll" DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\Hl7.Fhir.Support.Poco.dll" DestinationFolder="$(TargetDir)" /> -->
+
+    <!-- <Copy SourceFiles="..\migrations\UdapDb.SqlServer\bin\$(Configuration)\net6.0\Hl7.FhirPath.dll" DestinationFolder="$(TargetDir)" /> -->
+
+  <!--   <Message Text="Copied support DLLs" Importance="High" /> -->
+  <!-- </Target> -->
+
+</Project>

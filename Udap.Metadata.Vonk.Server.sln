@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udap.Metadata.Vonk.Server", "Udap.Metadata.Vonk.Server.csproj", "{7E910912-FF17-409A-9F1D-6BBFAC79522B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E910912-FF17-409A-9F1D-6BBFAC79522B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E910912-FF17-409A-9F1D-6BBFAC79522B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E910912-FF17-409A-9F1D-6BBFAC79522B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E910912-FF17-409A-9F1D-6BBFAC79522B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0964EE0E-3213-43D6-8F7B-96C53CB90FF9}
+	EndGlobalSection
+EndGlobal
