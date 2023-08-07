@@ -26,14 +26,3 @@ jobs:
     - name: Build and Restore dependencies
       run: dotnet build -c Release Udap.Metadata.Vonk.Server.sln
 
-    - name: Create nuget package for GPR
-      run: |
-        dotnet pack -v normal -c Release --include-source -p:PackageVersion=0.0.1-develop.${{ github.run_number }} ./Udap.Metadata.Vonk.Server/Udap.Metadata.Vonk.Server.csproj
-
-    # - name: Publish the package to GPR
-    #   run: |
-    #     dotnet nuget push ./Udap.Metadata.Server/bin/Release/*.symbols.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
-    #     dotnet nuget push ./Udap.Server/bin/Release/*.symbols.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
-    - name: Publish the package to GPR
-      run: |
-        dotnet nuget push ./Udap.Metadata.Vonk.Server/bin/Release/*.symbols.nupkg -k ${{secrets.GITHUB_TOKEN}}
